@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Library</title>
+  </head>
+  <body>
+    <h1>My Library</h1>
+    <div>
+      <table>
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Pages</th>
+            <th>Has been read?</th>
+            <th>Remove This Book</th>
+            <th>Toggle Read Status</th>
+          </tr>
+        </thead>
+        <tbody class="bookShelf"></tbody>
+      </table>
+    </div>
+    <div class="addBookFormContainer">
+      <form id="addBookForm">
+        <label>Book Name:</label>
+        <input type="text" id="title" name="title" /><br />
+        <label>Author:</label>
+        <input type="text" id="author" name="author" /><br />
+        <label>Number of Pages:</label>
+        <input type="text" id="pages" name="pages" /><br />
+        <label>Have you read it?</label>
+        <input type="checkbox" id="read" name="read" /><br />
+        <button type="submit">Add Book</button>
+      </form>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
